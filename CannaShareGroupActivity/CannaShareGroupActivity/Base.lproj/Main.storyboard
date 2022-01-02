@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Activity View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ActivityVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ActivityViewController" customModule="CannaShareGroupActivity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JKZ-jo-wS4">
+                                <rect key="frame" x="40" y="124" width="334" height="330"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="330" id="uOs-3Y-EHY"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="91" translatesAutoresizingMaskIntoConstraints="NO" id="AKy-Hq-Atc">
+                                <rect key="frame" x="116" y="428" width="182" height="316"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="cUs-yj-US0">
+                                        <rect key="frame" x="0.0" y="142.5" width="0.0" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Indica"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="vmy-gw-tss">
+                                        <rect key="frame" x="91" y="142.5" width="0.0" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Hybrid"/>
+                                        <connections>
+                                            <action selector="hybridButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m0L-Yc-cM5"/>
+                                            <action selector="indicaButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FTX-O9-ioh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EpD-ky-fRZ">
+                                        <rect key="frame" x="182" y="142.5" width="0.0" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sativa"/>
+                                        <connections>
+                                            <action selector="sativaButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aiq-DA-KjM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="JKZ-jo-wS4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="BCl-DD-eiV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AKy-Hq-Atc" secondAttribute="bottom" constant="118" id="O2O-EY-ZbE"/>
+                            <constraint firstItem="JKZ-jo-wS4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="UKe-C8-atj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JKZ-jo-wS4" secondAttribute="trailing" constant="40" id="am3-Ww-D6i"/>
+                            <constraint firstItem="JKZ-jo-wS4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jy7-3d-Byh"/>
+                            <constraint firstItem="AKy-Hq-Atc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ssy-KI-xBB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hybridButton" destination="vmy-gw-tss" id="Sez-fs-4OZ"/>
+                        <outlet property="indicaButton" destination="cUs-yj-US0" id="fpk-ci-vjA"/>
+                        <outlet property="sativaButton" destination="EpD-ky-fRZ" id="rpA-Tq-mdd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-104.34782608695653" y="-8.0357142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
