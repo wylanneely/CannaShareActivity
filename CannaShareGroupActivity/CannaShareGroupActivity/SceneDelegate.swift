@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             //self.window =  UIWindow(frame: UIScreen.main.bounds)
 
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        guard let rootVC = storyboard.instantiateViewController(identifier: "ActivityVC") as? ActivityViewController else {
+        guard let rootVC = storyboard.instantiateViewController(identifier: "ActivityVC") as? GanjaActivityVC else {
                 print("ViewController not found")
                 return
             }

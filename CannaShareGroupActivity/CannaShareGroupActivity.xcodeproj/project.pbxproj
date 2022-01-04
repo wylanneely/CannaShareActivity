@@ -15,8 +15,9 @@
 		E9942F5B27817D7800C12464 /* CannaShareGroupActivityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9942F5A27817D7800C12464 /* CannaShareGroupActivityUITests.swift */; };
 		E9942F5D27817D7800C12464 /* CannaShareGroupActivityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9942F5C27817D7800C12464 /* CannaShareGroupActivityUITestsLaunchTests.swift */; };
 		E9942F7027817E9F00C12464 /* Cannabis.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9942F6F27817E9F00C12464 /* Cannabis.swift */; };
-		E9942F7227817EE100C12464 /* GangaShareActivity .swift in Sources */ = {isa = PBXBuildFile; fileRef = E9942F7127817EE100C12464 /* GangaShareActivity .swift */; };
-		E9942F74278188D600C12464 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9942F73278188D600C12464 /* ActivityViewController.swift */; };
+		E9942F7227817EE100C12464 /* GangaShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9942F7127817EE100C12464 /* GangaShare.swift */; };
+		E9942F74278188D600C12464 /* GanjaActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9942F73278188D600C12464 /* GanjaActivityVC.swift */; };
+		E9942F78278250B000C12464 /* GanjaShareActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9942F77278250B000C12464 /* GanjaShareActivityController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,10 +50,11 @@
 		E9942F5A27817D7800C12464 /* CannaShareGroupActivityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CannaShareGroupActivityUITests.swift; sourceTree = "<group>"; };
 		E9942F5C27817D7800C12464 /* CannaShareGroupActivityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CannaShareGroupActivityUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E9942F6F27817E9F00C12464 /* Cannabis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cannabis.swift; sourceTree = "<group>"; };
-		E9942F7127817EE100C12464 /* GangaShareActivity .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GangaShareActivity .swift"; sourceTree = "<group>"; };
-		E9942F73278188D600C12464 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		E9942F7127817EE100C12464 /* GangaShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GangaShare.swift; sourceTree = "<group>"; };
+		E9942F73278188D600C12464 /* GanjaActivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GanjaActivityVC.swift; sourceTree = "<group>"; };
 		E9942F7527818E4F00C12464 /* CannaShareGroupActivity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = CannaShareGroupActivity.entitlements; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/CannaShareGroupActivity.entitlements"; sourceTree = "<group>"; };
 		E9942F762781909100C12464 /* CannaShareGroupActivity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CannaShareGroupActivity.entitlements; sourceTree = "<group>"; };
+		E9942F77278250B000C12464 /* GanjaShareActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GanjaShareActivityController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 		E9942F6B27817DA500C12464 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E9942F77278250B000C12464 /* GanjaShareActivityController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -154,7 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				E9942F6F27817E9F00C12464 /* Cannabis.swift */,
-				E9942F7127817EE100C12464 /* GangaShareActivity .swift */,
+				E9942F7127817EE100C12464 /* GangaShare.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -169,7 +172,7 @@
 		E9942F6E27817DAF00C12464 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				E9942F73278188D600C12464 /* ActivityViewController.swift */,
+				E9942F73278188D600C12464 /* GanjaActivityVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -305,9 +308,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9942F7027817E9F00C12464 /* Cannabis.swift in Sources */,
-				E9942F74278188D600C12464 /* ActivityViewController.swift in Sources */,
+				E9942F74278188D600C12464 /* GanjaActivityVC.swift in Sources */,
+				E9942F78278250B000C12464 /* GanjaShareActivityController.swift in Sources */,
 				E9942F3A27817D7600C12464 /* AppDelegate.swift in Sources */,
-				E9942F7227817EE100C12464 /* GangaShareActivity .swift in Sources */,
+				E9942F7227817EE100C12464 /* GangaShare.swift in Sources */,
 				E9942F3C27817D7600C12464 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Activity View Controller-->
+        <!--Ganja ActivityVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ActivityVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ActivityViewController" customModule="CannaShareGroupActivity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ActivityVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="GanjaActivityVC" customModule="CannaShareGroupActivity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,14 +51,23 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyC-FR-8VJ">
+                                <rect key="frame" x="152.5" y="73" width="109.5" height="31"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="SharePlay"/>
+                                <connections>
+                                    <action selector="SharePlayButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mXs-Q1-vJg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
+                            <constraint firstItem="LyC-FR-8VJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6th-YT-9ic"/>
                             <constraint firstItem="JKZ-jo-wS4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="BCl-DD-eiV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AKy-Hq-Atc" secondAttribute="bottom" constant="118" id="O2O-EY-ZbE"/>
                             <constraint firstItem="JKZ-jo-wS4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="UKe-C8-atj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JKZ-jo-wS4" secondAttribute="trailing" constant="40" id="am3-Ww-D6i"/>
+                            <constraint firstItem="JKZ-jo-wS4" firstAttribute="top" secondItem="LyC-FR-8VJ" secondAttribute="bottom" constant="20" id="cp6-vb-baP"/>
                             <constraint firstItem="JKZ-jo-wS4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jy7-3d-Byh"/>
                             <constraint firstItem="AKy-Hq-Atc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ssy-KI-xBB"/>
                         </constraints>
