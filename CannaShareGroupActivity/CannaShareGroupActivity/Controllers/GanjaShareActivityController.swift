@@ -35,8 +35,7 @@ class GanjaShareActivityController: CannabisTypeDelegate {
         
                 groupSession.$activeParticipants
             .sink { activeParticipants in
-                let newParticipants =
-                activeParticipants.subtracting(groupSession.activeParticipants)
+                let newParticipants = activeParticipants.subtracting(groupSession.activeParticipants)
                 Task {
                     do {
                         try await messenger.send(GanjaMessage(type:self.cannaType!.rawValue),
